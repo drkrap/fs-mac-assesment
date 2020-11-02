@@ -902,6 +902,74 @@
             </RULE>
         </POLICY>
         <POLICY>
+            <RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ENABLED="true" ID="-1769381730644197066" META_TYPE="COMPLY" NAME="1.3.2.23 Mac OS  Time Machine Assesment" NOT_COND_UPDATE="true" UPGRADE_PERFORMED="true">
+                <GROUP_IN_FILTER/>
+                <INACTIVITY_TTL TTL="0" USE_DEFAULT="true"/>
+                <ADMISSION_RESOLVE_DELAY TTL="0" USE_DEFAULT="true"/>
+                <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
+                    <ADMISSION ALL="true"/>
+                </MATCH_TIMING>
+                <EXPRESSION EXPR_TYPE="SIMPLE">
+                    <!--Rule expression. Rule name is: 1.3.2.23 Mac OS  Time Machine Assesment-->
+                    <CONDITION EMPTY_LIST_VALUE="false" FIELD_NAME="in-group" LABEL="Member of Group" LEFT_PARENTHESIS="0" LOGIC="AND" RET_VALUE_ON_UKNOWN="IRRESOLVED" RIGHT_PARENTHESIS="0">
+                        <FILTER FILTER_ID="-3692260990997285082">
+                            <GROUP ID="4073701467031457579" NAME="Macintosh Managable"/>
+                        </FILTER>
+                    </CONDITION>
+                </EXPRESSION>
+                <EXCEPTION NAME="ip" UNKNOWN_EVAL="UNMATCH"/>
+                <EXCEPTION NAME="mac" UNKNOWN_EVAL="UNMATCH"/>
+                <EXCEPTION NAME="nbthost" UNKNOWN_EVAL="UNMATCH"/>
+                <EXCEPTION NAME="user" UNKNOWN_EVAL="UNMATCH"/>
+                <EXCEPTION NAME="group" UNKNOWN_EVAL="UNMATCH"/>
+                <ORIGIN NAME="CUSTOM"/>
+                <UNMATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
+                    <ADMISSION ALL="true"/>
+                </UNMATCH_TIMING>
+                <RANGE FROM="0.0.0.0" TO="255.255.255.255"/>
+                <SUBNET address="::" prefix="0"/>
+                <RULE_CHAIN>
+                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="6428480666982930068" NAME="Time Machine Auto Backup is enable" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
+                        <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
+                            <ADMISSION ALL="true"/>
+                        </MATCH_TIMING>
+                        <META_TYPE STATE="COMPLY"/>
+                        <EXPRESSION EXPR_TYPE="NOT">
+                            <!--Rule expression. Rule name is: Time Machine Auto Backup is enable-->
+                            <EXPRESSION EXPR_TYPE="SIMPLE">
+                                <CONDITION EMPTY_LIST_VALUE="false" FIELD_NAME="mac_script_result.b3eff16b46007c1b4f3f8acd77b88904" INNER_NOT="true" LABEL="Macintosh Expected Script Result Command or Script File:MacOS_get_TM.sh" LEFT_PARENTHESIS="0" LOGIC="AND" PLUGIN_NAME="OS X" PLUGIN_UNIQUE_NAME="osx" PLUGIN_VESRION="2.3.1.1032" PLUGIN_VESRION_NUMBER="23011032" RET_VALUE_ON_UKNOWN="UNMATCH" RIGHT_PARENTHESIS="0">
+                                    <FIELD METANAME="mac_script_result" NAME="mac_script_result.b3eff16b46007c1b4f3f8acd77b88904">
+                                        <PARAM NAME="mac_script_howtorun_prop" TYPE="string" VALUE="MacOS_get_TM.sh"/>
+                                    </FIELD>
+                                    <FILTER CASE_SENSITIVE="false" FILTER_ID="542961982801406215" TYPE="contains">
+                                        <VALUE VALUE2="AutoBackup is not enable"/>
+                                    </FILTER>
+                                </CONDITION>
+                            </EXPRESSION>
+                        </EXPRESSION>
+                    </INNER_RULE>
+                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="8905333243675921438" NAME="Time Machine Auto Backup is Disable" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
+                        <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
+                            <ADMISSION ALL="true"/>
+                        </MATCH_TIMING>
+                        <META_TYPE STATE="NOT_COMPLY"/>
+                        <EXPRESSION EXPR_TYPE="SIMPLE">
+                            <!--Rule expression. Rule name is: Time Machine Auto Backup is Disable-->
+                            <CONDITION EMPTY_LIST_VALUE="false" FIELD_NAME="mac_script_result.b3eff16b46007c1b4f3f8acd77b88904" LABEL="Macintosh Expected Script Result Command or Script File:MacOS_get_TM.sh" LEFT_PARENTHESIS="0" LOGIC="AND" PLUGIN_NAME="OS X" PLUGIN_UNIQUE_NAME="osx" PLUGIN_VESRION="2.3.1.1032" PLUGIN_VESRION_NUMBER="23011032" RET_VALUE_ON_UKNOWN="UNMATCH" RIGHT_PARENTHESIS="0">
+                                <FIELD METANAME="mac_script_result" NAME="mac_script_result.b3eff16b46007c1b4f3f8acd77b88904">
+                                    <PARAM NAME="mac_script_howtorun_prop" TYPE="string" VALUE="MacOS_get_TM.sh"/>
+                                </FIELD>
+                                <FILTER CASE_SENSITIVE="false" FILTER_ID="5027598936357027776" TYPE="contains">
+                                    <VALUE VALUE2="AutoBackup is not enable"/>
+                                </FILTER>
+                            </CONDITION>
+                        </EXPRESSION>
+                    </INNER_RULE>
+                </RULE_CHAIN>
+                <REPORT_TABLES/>
+            </RULE>
+        </POLICY>
+        <POLICY>
             <RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ENABLED="true" ID="-1305309327009370701" META_TYPE="COMPLY" NAME="1.3.2.15 Mac OS Network Sharing Assement" NOT_COND_UPDATE="true" UPGRADE_PERFORMED="true">
                 <GROUP_IN_FILTER/>
                 <INACTIVITY_TTL TTL="0" USE_DEFAULT="true"/>
