@@ -109,6 +109,12 @@
                             </CONDITION>
                         </EXPRESSION>
                     </INNER_RULE>
+                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="-5799939290862756731" NAME="Investigate" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
+                        <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
+                            <ADMISSION ALL="true"/>
+                        </MATCH_TIMING>
+                        <META_TYPE STATE="NA"/>
+                    </INNER_RULE>
                 </RULE_CHAIN>
                 <REPORT_TABLES/>
             </RULE>
@@ -123,34 +129,17 @@
                 <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
                     <ADMISSION ALL="true"/>
                 </MATCH_TIMING>
-                <EXCEPTION NAME="nbthost" UNKNOWN_EVAL="UNMATCH"/>
                 <EXCEPTION NAME="ip" UNKNOWN_EVAL="UNMATCH"/>
-                <EXCEPTION NAME="user" UNKNOWN_EVAL="UNMATCH"/>
                 <EXCEPTION NAME="mac" UNKNOWN_EVAL="UNMATCH"/>
+                <EXCEPTION NAME="nbthost" UNKNOWN_EVAL="UNMATCH"/>
+                <EXCEPTION NAME="user" UNKNOWN_EVAL="UNMATCH"/>
                 <EXCEPTION NAME="group" UNKNOWN_EVAL="UNMATCH"/>
                 <ORIGIN NAME="CUSTOM"/>
                 <UNMATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
                     <ADMISSION ALL="true"/>
                 </UNMATCH_TIMING>
-                <SEGMENT ID="8542765337710842162" NAME="Electrodata">
-                    <RANGE FROM="10.10.128.0" TO="10.10.138.255"/>
-                    <RANGE FROM="10.10.140.0" TO="10.10.140.255"/>
-                    <RANGE FROM="10.10.180.0" TO="10.10.180.255"/>
-                    <RANGE FROM="10.10.210.4" TO="10.10.210.239"/>
-                    <RANGE FROM="10.10.210.241" TO="10.10.210.254"/>
-                    <RANGE FROM="10.10.211.0" TO="10.10.211.255"/>
-                    <RANGE FROM="10.10.249.0" TO="10.10.252.255"/>
-                    <RANGE FROM="172.31.0.0" TO="172.31.15.255"/>
-                    <RANGE FROM="172.31.32.0" TO="172.31.63.255"/>
-                    <RANGE FROM="192.168.2.0" TO="192.168.2.255"/>
-                    <RANGE FROM="192.168.11.0" TO="192.168.11.255"/>
-                    <RANGE FROM="192.168.50.0" TO="192.168.50.255"/>
-                    <RANGE FROM="192.168.170.0" TO="192.168.171.255"/>
-                    <RANGE FROM="192.168.200.0" TO="192.168.200.255"/>
-                    <RANGE FROM="192.168.240.0" TO="192.168.240.255"/>
-                    <RANGE FROM="192.168.252.0" TO="192.168.252.255"/>
-                    <RANGE FROM="192.168.255.0" TO="192.168.255.255"/>
-                </SEGMENT>
+                <RANGE FROM="0.0.0.0" TO="255.255.255.255"/>
+                <SUBNET address="::" prefix="0"/>
                 <RULE_CHAIN>
                     <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="5648815204438352587" NAME="FileVault Disabled" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
                         <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
@@ -319,7 +308,7 @@
                             </EXPRESSION>
                         </EXPRESSION>
                     </INNER_RULE>
-                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="-8271958292260499967" NAME="Irresolvable" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
+                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="-8271958292260499967" NAME="Investigate" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
                         <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
                             <ADMISSION ALL="true"/>
                         </MATCH_TIMING>
@@ -391,7 +380,7 @@
                             </CONDITION>
                         </EXPRESSION>
                     </INNER_RULE>
-                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="-5836277465928860734" NAME="Irresolvable" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
+                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="-5836277465928860734" NAME="Investigate" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
                         <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
                             <ADMISSION ALL="true"/>
                         </MATCH_TIMING>
@@ -533,6 +522,12 @@
                             </CONDITION>
                         </EXPRESSION>
                     </INNER_RULE>
+                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="-4740454546739398865" NAME="Investigate" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
+                        <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
+                            <ADMISSION ALL="true"/>
+                        </MATCH_TIMING>
+                        <META_TYPE STATE="NA"/>
+                    </INNER_RULE>
                 </RULE_CHAIN>
                 <REPORT_TABLES/>
             </RULE>
@@ -547,34 +542,17 @@
                 <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
                     <ADMISSION ALL="true"/>
                 </MATCH_TIMING>
-                <EXCEPTION NAME="nbthost" UNKNOWN_EVAL="UNMATCH"/>
                 <EXCEPTION NAME="ip" UNKNOWN_EVAL="UNMATCH"/>
-                <EXCEPTION NAME="user" UNKNOWN_EVAL="UNMATCH"/>
                 <EXCEPTION NAME="mac" UNKNOWN_EVAL="UNMATCH"/>
+                <EXCEPTION NAME="nbthost" UNKNOWN_EVAL="UNMATCH"/>
+                <EXCEPTION NAME="user" UNKNOWN_EVAL="UNMATCH"/>
                 <EXCEPTION NAME="group" UNKNOWN_EVAL="UNMATCH"/>
                 <ORIGIN NAME=""/>
                 <UNMATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
                     <ADMISSION ALL="true"/>
                 </UNMATCH_TIMING>
-                <SEGMENT ID="8542765337710842162" NAME="Electrodata">
-                    <RANGE FROM="10.10.128.0" TO="10.10.138.255"/>
-                    <RANGE FROM="10.10.140.0" TO="10.10.140.255"/>
-                    <RANGE FROM="10.10.180.0" TO="10.10.180.255"/>
-                    <RANGE FROM="10.10.210.4" TO="10.10.210.239"/>
-                    <RANGE FROM="10.10.210.241" TO="10.10.210.254"/>
-                    <RANGE FROM="10.10.211.0" TO="10.10.211.255"/>
-                    <RANGE FROM="10.10.249.0" TO="10.10.252.255"/>
-                    <RANGE FROM="172.31.0.0" TO="172.31.15.255"/>
-                    <RANGE FROM="172.31.32.0" TO="172.31.63.255"/>
-                    <RANGE FROM="192.168.2.0" TO="192.168.2.255"/>
-                    <RANGE FROM="192.168.11.0" TO="192.168.11.255"/>
-                    <RANGE FROM="192.168.50.0" TO="192.168.50.255"/>
-                    <RANGE FROM="192.168.170.0" TO="192.168.171.255"/>
-                    <RANGE FROM="192.168.200.0" TO="192.168.200.255"/>
-                    <RANGE FROM="192.168.240.0" TO="192.168.240.255"/>
-                    <RANGE FROM="192.168.252.0" TO="192.168.252.255"/>
-                    <RANGE FROM="192.168.255.0" TO="192.168.255.255"/>
-                </SEGMENT>
+                <RANGE FROM="0.0.0.0" TO="255.255.255.255"/>
+                <SUBNET address="::" prefix="0"/>
                 <RULE_CHAIN>
                     <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="86400" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="4043226870212107888" NAME="Macintosh OS is Up to Date" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="false">
                         <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
@@ -732,6 +710,12 @@
                             </CONDITION>
                         </EXPRESSION>
                     </INNER_RULE>
+                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="7231128664560207682" NAME="Investigate" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
+                        <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
+                            <ADMISSION ALL="true"/>
+                        </MATCH_TIMING>
+                        <META_TYPE STATE="NA"/>
+                    </INNER_RULE>
                 </RULE_CHAIN>
                 <REPORT_TABLES/>
             </RULE>
@@ -797,6 +781,12 @@
                                 </FILTER>
                             </CONDITION>
                         </EXPRESSION>
+                    </INNER_RULE>
+                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="-6931971630762152344" NAME="Investigate" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
+                        <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
+                            <ADMISSION ALL="true"/>
+                        </MATCH_TIMING>
+                        <META_TYPE STATE="NA"/>
                     </INNER_RULE>
                 </RULE_CHAIN>
                 <REPORT_TABLES/>
@@ -897,6 +887,12 @@
                             </CONDITION>
                         </EXPRESSION>
                     </INNER_RULE>
+                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="4655398526904504431" NAME="Investigate" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
+                        <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
+                            <ADMISSION ALL="true"/>
+                        </MATCH_TIMING>
+                        <META_TYPE STATE="NA"/>
+                    </INNER_RULE>
                 </RULE_CHAIN>
                 <REPORT_TABLES/>
             </RULE>
@@ -965,6 +961,12 @@
                             </CONDITION>
                         </EXPRESSION>
                     </INNER_RULE>
+                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="6105766807461440705" NAME="Investigate" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
+                        <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
+                            <ADMISSION ALL="true"/>
+                        </MATCH_TIMING>
+                        <META_TYPE STATE="NA"/>
+                    </INNER_RULE>
                 </RULE_CHAIN>
                 <REPORT_TABLES/>
             </RULE>
@@ -997,22 +999,53 @@
                 <RANGE FROM="0.0.0.0" TO="255.255.255.255"/>
                 <SUBNET address="::" prefix="0"/>
                 <RULE_CHAIN>
-                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="-513867862466486510" NAME="Network Sharing Disable" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
+                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="-2891579961044350168" NAME="Network Sharing Enable but NAT not running" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
                         <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
                             <ADMISSION ALL="true"/>
                         </MATCH_TIMING>
-                        <META_TYPE STATE="COMPLY"/>
-                        <EXPRESSION EXPR_TYPE="SIMPLE">
-                            <!--Rule expression. Rule name is: Network Sharing Disable-->
-                            <CONDITION EMPTY_LIST_VALUE="false" FIELD_NAME="mac_script_result.e1151d54cfb14c2dd3645b6027d7a46d" LABEL="Macintosh Expected Script Result Command or Script File:sudo launchctl print-disabled system | /usr/bin/grep com.apple.NetworkSharing" LEFT_PARENTHESIS="0" LOGIC="AND" PLUGIN_NAME="OS X" PLUGIN_UNIQUE_NAME="osx" PLUGIN_VESRION="2.3.1.1032" PLUGIN_VESRION_NUMBER="23011032" RET_VALUE_ON_UKNOWN="UNMATCH" RIGHT_PARENTHESIS="0">
-                                <FIELD METANAME="mac_script_result" NAME="mac_script_result.e1151d54cfb14c2dd3645b6027d7a46d">
-                                    <PARAM NAME="mac_script_howtorun_prop" TYPE="string" VALUE="sudo launchctl print-disabled system | /usr/bin/grep com.apple.NetworkSharing"/>
-                                </FIELD>
-                                <FILTER CASE_SENSITIVE="false" FILTER_ID="-4249333423711159234" TYPE="contains">
-                                    <VALUE VALUE2="false"/>
-                                </FILTER>
-                            </CONDITION>
+                        <META_TYPE STATE="NA"/>
+                        <EXPRESSION EXPR_TYPE="AND">
+                            <!--Rule expression. Rule name is: Network Sharing Enable but NAT not running-->
+                            <EXPRESSION EXPR_TYPE="SIMPLE">
+                                <CONDITION EMPTY_LIST_VALUE="false" FIELD_NAME="mac_script_result.e1151d54cfb14c2dd3645b6027d7a46d" LABEL="Macintosh Expected Script Result Command or Script File:sudo launchctl print-disabled system | /usr/bin/grep com.apple.NetworkSharing" LEFT_PARENTHESIS="0" LOGIC="AND" PLUGIN_NAME="OS X" PLUGIN_UNIQUE_NAME="osx" PLUGIN_VESRION="2.3.1.1032" PLUGIN_VESRION_NUMBER="23011032" RET_VALUE_ON_UKNOWN="UNMATCH" RIGHT_PARENTHESIS="0">
+                                    <FIELD METANAME="mac_script_result" NAME="mac_script_result.e1151d54cfb14c2dd3645b6027d7a46d">
+                                        <PARAM NAME="mac_script_howtorun_prop" TYPE="string" VALUE="sudo launchctl print-disabled system | /usr/bin/grep com.apple.NetworkSharing"/>
+                                    </FIELD>
+                                    <FILTER CASE_SENSITIVE="false" FILTER_ID="7120312544902405057" TYPE="contains">
+                                        <VALUE VALUE2="true"/>
+                                    </FILTER>
+                                </CONDITION>
+                            </EXPRESSION>
+                            <EXPRESSION EXPR_TYPE="NOT">
+                                <EXPRESSION EXPR_TYPE="SIMPLE">
+                                    <CONDITION EMPTY_LIST_VALUE="false" FIELD_NAME="mac_script_result.e13edf4e3dee5acb665cad3f5223b7d0" INNER_NOT="true" LABEL="Macintosh Expected Script Result Command or Script File:sudo defaults read /Library/Preferences/SystemConfiguration/com.apple.nat NAT | grep Enable" LEFT_PARENTHESIS="0" LOGIC="AND" PLUGIN_NAME="OS X" PLUGIN_UNIQUE_NAME="osx" PLUGIN_VESRION="2.3.1.1032" PLUGIN_VESRION_NUMBER="23011032" RET_VALUE_ON_UKNOWN="UNMATCH" RIGHT_PARENTHESIS="0">
+                                        <FIELD METANAME="mac_script_result" NAME="mac_script_result.e13edf4e3dee5acb665cad3f5223b7d0">
+                                            <PARAM NAME="mac_script_howtorun_prop" TYPE="string" VALUE="sudo defaults read /Library/Preferences/SystemConfiguration/com.apple.nat NAT | grep Enable"/>
+                                        </FIELD>
+                                        <FILTER CASE_SENSITIVE="false" FILTER_ID="-4602356584499887485" TYPE="contains">
+                                            <VALUE VALUE2="1"/>
+                                        </FILTER>
+                                    </CONDITION>
+                                </EXPRESSION>
+                            </EXPRESSION>
                         </EXPRESSION>
+                        <ACTION DISABLED="true" NAME="mac_run_script">
+                            <PARAM NAME="mac_script_howtorun_ac" VALUE="sudo disable system/com.apple.NetworkSharing"/>
+                            <PARAM NAME="script_interactive" VALUE="false"/>
+                            <SCHEDULE>
+                                <START Class="Immediately"/>
+                                <OCCURENCE onStart="true"/>
+                            </SCHEDULE>
+                        </ACTION>
+                        <ACTION DISABLED="true" NAME="mac_user_notification">
+                            <PARAM NAME="title" VALUE=" Network Sharing Enable"/>
+                            <PARAM NAME="body" VALUE="Please disable Network Sharing and restart your sesion in order to make a recheck. "/>
+                            <PARAM NAME="type" VALUE="banner"/>
+                            <SCHEDULE>
+                                <START Class="Immediately"/>
+                                <OCCURENCE onStart="true"/>
+                            </SCHEDULE>
+                        </ACTION>
                     </INNER_RULE>
                     <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="-4376985163379683188" NAME="Network Sharing Enable" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
                         <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
@@ -1047,6 +1080,29 @@
                                 <OCCURENCE onStart="true"/>
                             </SCHEDULE>
                         </ACTION>
+                    </INNER_RULE>
+                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="-513867862466486510" NAME="Network Sharing Disable" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
+                        <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
+                            <ADMISSION ALL="true"/>
+                        </MATCH_TIMING>
+                        <META_TYPE STATE="COMPLY"/>
+                        <EXPRESSION EXPR_TYPE="SIMPLE">
+                            <!--Rule expression. Rule name is: Network Sharing Disable-->
+                            <CONDITION EMPTY_LIST_VALUE="false" FIELD_NAME="mac_script_result.e1151d54cfb14c2dd3645b6027d7a46d" LABEL="Macintosh Expected Script Result Command or Script File:sudo launchctl print-disabled system | /usr/bin/grep com.apple.NetworkSharing" LEFT_PARENTHESIS="0" LOGIC="AND" PLUGIN_NAME="OS X" PLUGIN_UNIQUE_NAME="osx" PLUGIN_VESRION="2.3.1.1032" PLUGIN_VESRION_NUMBER="23011032" RET_VALUE_ON_UKNOWN="UNMATCH" RIGHT_PARENTHESIS="0">
+                                <FIELD METANAME="mac_script_result" NAME="mac_script_result.e1151d54cfb14c2dd3645b6027d7a46d">
+                                    <PARAM NAME="mac_script_howtorun_prop" TYPE="string" VALUE="sudo launchctl print-disabled system | /usr/bin/grep com.apple.NetworkSharing"/>
+                                </FIELD>
+                                <FILTER CASE_SENSITIVE="false" FILTER_ID="-4249333423711159234" TYPE="contains">
+                                    <VALUE VALUE2="false"/>
+                                </FILTER>
+                            </CONDITION>
+                        </EXPRESSION>
+                    </INNER_RULE>
+                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="-5026352136038266172" NAME="investigate" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
+                        <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
+                            <ADMISSION ALL="true"/>
+                        </MATCH_TIMING>
+                        <META_TYPE STATE="NA"/>
                     </INNER_RULE>
                 </RULE_CHAIN>
                 <REPORT_TABLES/>
@@ -1114,7 +1170,7 @@
                             </CONDITION>
                         </EXPRESSION>
                     </INNER_RULE>
-                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="6526112105790902732" NAME="Irresolvable" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
+                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="6526112105790902732" NAME="Investigate" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
                         <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
                             <ADMISSION ALL="true"/>
                         </MATCH_TIMING>
@@ -1564,6 +1620,12 @@
                             </EXPRESSION>
                         </EXPRESSION>
                     </INNER_RULE>
+                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="-1638170238609049782" NAME="Investigate" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
+                        <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
+                            <ADMISSION ALL="true"/>
+                        </MATCH_TIMING>
+                        <META_TYPE STATE="NA"/>
+                    </INNER_RULE>
                 </RULE_CHAIN>
                 <REPORT_TABLES/>
             </RULE>
@@ -1631,6 +1693,12 @@
                                 </FILTER>
                             </CONDITION>
                         </EXPRESSION>
+                    </INNER_RULE>
+                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="-8078481862356670663" NAME="Investigate" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
+                        <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
+                            <ADMISSION ALL="true"/>
+                        </MATCH_TIMING>
+                        <META_TYPE STATE="NA"/>
                     </INNER_RULE>
                 </RULE_CHAIN>
                 <REPORT_TABLES/>
@@ -1814,34 +1882,17 @@
                 <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
                     <ADMISSION ALL="true"/>
                 </MATCH_TIMING>
-                <EXCEPTION NAME="nbthost" UNKNOWN_EVAL="UNMATCH"/>
                 <EXCEPTION NAME="ip" UNKNOWN_EVAL="UNMATCH"/>
-                <EXCEPTION NAME="user" UNKNOWN_EVAL="UNMATCH"/>
                 <EXCEPTION NAME="mac" UNKNOWN_EVAL="UNMATCH"/>
+                <EXCEPTION NAME="nbthost" UNKNOWN_EVAL="UNMATCH"/>
+                <EXCEPTION NAME="user" UNKNOWN_EVAL="UNMATCH"/>
                 <EXCEPTION NAME="group" UNKNOWN_EVAL="UNMATCH"/>
                 <ORIGIN NAME="CUSTOM"/>
                 <UNMATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
                     <ADMISSION ALL="true"/>
                 </UNMATCH_TIMING>
-                <SEGMENT ID="8542765337710842162" NAME="Electrodata">
-                    <RANGE FROM="10.10.128.0" TO="10.10.138.255"/>
-                    <RANGE FROM="10.10.140.0" TO="10.10.140.255"/>
-                    <RANGE FROM="10.10.180.0" TO="10.10.180.255"/>
-                    <RANGE FROM="10.10.210.4" TO="10.10.210.239"/>
-                    <RANGE FROM="10.10.210.241" TO="10.10.210.254"/>
-                    <RANGE FROM="10.10.211.0" TO="10.10.211.255"/>
-                    <RANGE FROM="10.10.249.0" TO="10.10.252.255"/>
-                    <RANGE FROM="172.31.0.0" TO="172.31.15.255"/>
-                    <RANGE FROM="172.31.32.0" TO="172.31.63.255"/>
-                    <RANGE FROM="192.168.2.0" TO="192.168.2.255"/>
-                    <RANGE FROM="192.168.11.0" TO="192.168.11.255"/>
-                    <RANGE FROM="192.168.50.0" TO="192.168.50.255"/>
-                    <RANGE FROM="192.168.170.0" TO="192.168.171.255"/>
-                    <RANGE FROM="192.168.200.0" TO="192.168.200.255"/>
-                    <RANGE FROM="192.168.240.0" TO="192.168.240.255"/>
-                    <RANGE FROM="192.168.252.0" TO="192.168.252.255"/>
-                    <RANGE FROM="192.168.255.0" TO="192.168.255.255"/>
-                </SEGMENT>
+                <RANGE FROM="0.0.0.0" TO="255.255.255.255"/>
+                <SUBNET address="::" prefix="0"/>
                 <RULE_CHAIN>
                     <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="-4657880400610568808" NAME="Firewall Enabled and Stealth mode enable" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
                         <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
@@ -1946,34 +1997,17 @@
                 <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
                     <ADMISSION ALL="true"/>
                 </MATCH_TIMING>
-                <EXCEPTION NAME="nbthost" UNKNOWN_EVAL="UNMATCH"/>
                 <EXCEPTION NAME="ip" UNKNOWN_EVAL="UNMATCH"/>
-                <EXCEPTION NAME="user" UNKNOWN_EVAL="UNMATCH"/>
                 <EXCEPTION NAME="mac" UNKNOWN_EVAL="UNMATCH"/>
+                <EXCEPTION NAME="nbthost" UNKNOWN_EVAL="UNMATCH"/>
+                <EXCEPTION NAME="user" UNKNOWN_EVAL="UNMATCH"/>
                 <EXCEPTION NAME="group" UNKNOWN_EVAL="UNMATCH"/>
                 <ORIGIN NAME=""/>
                 <UNMATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
                     <ADMISSION ALL="true"/>
                 </UNMATCH_TIMING>
-                <SEGMENT ID="8542765337710842162" NAME="Electrodata">
-                    <RANGE FROM="10.10.128.0" TO="10.10.138.255"/>
-                    <RANGE FROM="10.10.140.0" TO="10.10.140.255"/>
-                    <RANGE FROM="10.10.180.0" TO="10.10.180.255"/>
-                    <RANGE FROM="10.10.210.4" TO="10.10.210.239"/>
-                    <RANGE FROM="10.10.210.241" TO="10.10.210.254"/>
-                    <RANGE FROM="10.10.211.0" TO="10.10.211.255"/>
-                    <RANGE FROM="10.10.249.0" TO="10.10.252.255"/>
-                    <RANGE FROM="172.31.0.0" TO="172.31.15.255"/>
-                    <RANGE FROM="172.31.32.0" TO="172.31.63.255"/>
-                    <RANGE FROM="192.168.2.0" TO="192.168.2.255"/>
-                    <RANGE FROM="192.168.11.0" TO="192.168.11.255"/>
-                    <RANGE FROM="192.168.50.0" TO="192.168.50.255"/>
-                    <RANGE FROM="192.168.170.0" TO="192.168.171.255"/>
-                    <RANGE FROM="192.168.200.0" TO="192.168.200.255"/>
-                    <RANGE FROM="192.168.240.0" TO="192.168.240.255"/>
-                    <RANGE FROM="192.168.252.0" TO="192.168.252.255"/>
-                    <RANGE FROM="192.168.255.0" TO="192.168.255.255"/>
-                </SEGMENT>
+                <RANGE FROM="0.0.0.0" TO="255.255.255.255"/>
+                <SUBNET address="::" prefix="0"/>
                 <RULE_CHAIN>
                     <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="86400" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="416109751284306877" NAME="Macintosh OS  apps Update enable" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="false">
                         <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
@@ -2116,6 +2150,12 @@
                             </CONDITION>
                         </EXPRESSION>
                     </INNER_RULE>
+                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="5550762030382897333" NAME="Investigate" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
+                        <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
+                            <ADMISSION ALL="true"/>
+                        </MATCH_TIMING>
+                        <META_TYPE STATE="NA"/>
+                    </INNER_RULE>
                 </RULE_CHAIN>
                 <REPORT_TABLES/>
             </RULE>
@@ -2181,6 +2221,12 @@
                                 </FILTER>
                             </CONDITION>
                         </EXPRESSION>
+                    </INNER_RULE>
+                    <INNER_RULE APP_VERSION="8.2.1.1-69" CACHE_TTL="345600" CACHE_TTL_SYNCED="true" CLASSIFICATION="REG_STATUS" DESCRIPTION="" ID="-9113785648065899678" NAME="Investigate" NOT_COND_UPDATE="true" RECHECK_MAIN_RULE_DEF="true">
+                        <MATCH_TIMING RATE="28800" SKIP_INACTIVE="true">
+                            <ADMISSION ALL="true"/>
+                        </MATCH_TIMING>
+                        <META_TYPE STATE="NA"/>
                     </INNER_RULE>
                 </RULE_CHAIN>
                 <REPORT_TABLES/>
