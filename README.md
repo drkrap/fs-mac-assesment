@@ -8,9 +8,18 @@ this policies inclues a set of scripts to work with Forescout, you are free to t
 
  Important Note: this Sets of policies are not made by Forescout, but it follow the best practice, all of them uese a last condition called "Irresolvable" but you can change it to investigate in order to see why it fail in some endpoints, 
 
- Know Issues: 
-    - Some Policies Run irresolvable due module is not present - Work Arround : Add a second condition on each policy where the value return is blank or any value
-    
-    - Some Policies exit with status code 0 
-    
-    - Fix: check that you are using the latest version of the Mac OS plugin  and is running.
+
+<table>
+  <tr>
+    <th> Know Issues: </th>
+    <th>Work arround</th>
+  </tr>
+  <tr>
+    <td>Some Policies Run irresolvable due module is not present</td>
+    <td>Some Policies exit with status code 0 </td>
+  </tr>
+  <tr>
+    <td>Add a second condition on each policy where the value return is 'blank' or 'any value' </td>
+    <td>Fix: check that you are using the latest version of the Mac OS plugin  and is running</td>
+  </tr>
+</table>
