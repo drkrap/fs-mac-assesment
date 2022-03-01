@@ -10,5 +10,7 @@ this policies inclues a set of scripts to work with Forescout, you are free to t
 
  Know Issues: 
     - Some Policies Run irresolvable due module is not present - Work Arround : Add a second condition on each policy where the value return is blank or any value
+    
     - Some Policies exit with status code 0 
+    
     - Fix: check that you are using the latest version of the Mac OS plugin  and is running.
